@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:ital,wght@0,100;0,300;0,900;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #FFE5B4;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2 / 3;
+}
+
+.navbar .menu {
+  grid-column: 4 / 7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar .menu li {
+  list-style: none;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #181818;
+  cursor: pointer;
+}
+
+.navbar .menu-bar {
+  display: none;
+}
+
+.navbar .shopping {
+  grid-column: 8 / 9;
+}
+
+.img {
+  background: url(../img/mascan.png);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  color: #4F4D55;
+  background: #293039;
+  grid-area: 1 / span 3;
+  align-items: center;
+}
+
+section > h1 {
+  grid-area: 1 / span 3;
+  grid-row: 3 / 3;
+  text-align: center;
+  font-size: 2rem;
+  
+}
+
+section > i {
+  grid-column: auto;
+  text-align: center;
+  grid-row: 5 / span 3;
+  color: white;
+  background: #ffc0c0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-top: 0.5em;
+  margin: 0 auto;
+}
+
+section > h2 {
+  grid-row: 8 / span 3;
+}
+
+
+
+
+
+/* grid-row: 3 / 3;
+  grid-column: 2 / 2; */
+/* grid-template-areas: 
+                       "head"
+                       "logo" "logo" "logo"
+                       "title" "title" "title" 
+                       "address" "phone" "mail"     
+                       "address" "phone" "mail"     
+                                 "phone" "mail"     
+                                 "phone" "mail"; */
