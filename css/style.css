@@ -43,9 +43,6 @@ body {
   display: none;
 }
 
-.navbar .shopping {
-  grid-column: 8 / 9;
-}
 
 .img {
   background: url(../img/mascan.png);
@@ -83,8 +80,15 @@ section > i {
 }
 
 section > h2 {
-  grid-row: 8 / span 3;
+  grid-row: 8 / span 1;
+  text-align: center;
 }
+
+section > h3 {
+  grid-row: 9 / span 1;
+  text-align: center;
+}
+
 
 
 
