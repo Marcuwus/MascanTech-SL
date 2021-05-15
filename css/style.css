@@ -89,6 +89,12 @@ section > h3 {
   text-align: center;
 }
 
+section > p.content {
+  grid-row: 10 / span 1;
+  text-align: center;
+  line-height: 1.5em;
+}
+
 
 
 
