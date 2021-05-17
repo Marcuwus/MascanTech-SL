@@ -115,33 +115,98 @@ section > p.third-content {
   grid-column: 3;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 div.form {
-  display: grid;
-  grid-template-rows: repeat(15, 1fr);
-  grid-template-columns: repeat(4, 1fr);
   background-color: white;
-  align-items: center;
-  text-align: center;
+  padding: 1em 20em 1em 20em;
+  height: auto;
 }
 
 div.form > h2 {
-  grid-row: 2 / span 1;
-  grid-column: span 2;
-  font-size: 2.5rem;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 4rem;
+  /* padding: 5%; */
 }
 
-div.form > p {
-  grid-row: 4 / span 1;
-  grid-column: span 2;
-  padding-left: 18%;
-}
-
-div.form > form {
-  grid-row: 3;
-  grid-column: 3 / span 3;
-  align-items: left;
+input[type=text], input[type=submit] {
+  display: block;
   text-align: left;
+  color: rgb(245, 89, 115);
+  gap: 50%;
+  height: 50px;
+  width: 500px;
+  margin: 0 auto 2rem;
 }
+
+::placeholder {
+  font-size: 1.25em;
+}
+
+::-moz-placeholder{
+  font-size: 1.25em;
+}
+
+:-ms-input-placeholder{
+  font-size: 1.25em;
+}
+
+::-webkit-input-placeholder{
+  font-size: 1.25em;
+}
+
+input[type=submit] {
+  text-align: center;
+}
+
+/* footer{
+  height: 5em;
+  background-color: coral;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* No mirar, código basura <3 */
+
 /* grid-row: 3 / 3;
   grid-column: 2 / 2; */
 /* grid-template-areas: 
