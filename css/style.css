@@ -51,18 +51,19 @@ body {
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(15, 1fr);
   color: #4F4D55;
   background: #293039;
   grid-area: 1 / span 3;
   align-items: center;
+  text-align: center;
 }
 
 section > h1 {
   grid-area: 1 / span 3;
   grid-row: 3 / 3;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   
 }
 
@@ -95,11 +96,52 @@ section > p.content {
   line-height: 1.5em;
 }
 
+section > h3.second-t {
+  grid-row: 11;
+}
 
+section > p.second-content {
+  grid-row: 12;
+  line-height: 1.5em;
+}
 
+section > h3.third-t {
+  grid-row: 13;
+  grid-column: 3;
+}
 
+section > p.third-content {
+  grid-row: 14;
+  grid-column: 3;
+}
 
+div.form {
+  display: grid;
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
 
+div.form > h2 {
+  grid-row: 2 / span 1;
+  grid-column: span 2;
+  font-size: 2.5rem;
+}
+
+div.form > p {
+  grid-row: 4 / span 1;
+  grid-column: span 2;
+  padding-left: 18%;
+}
+
+div.form > form {
+  grid-row: 3;
+  grid-column: 3 / span 3;
+  align-items: left;
+  text-align: left;
+}
 /* grid-row: 3 / 3;
   grid-column: 2 / 2; */
 /* grid-template-areas: 
