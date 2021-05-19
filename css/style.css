@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: #FFE5B4;
+  background-color: #ffe5b4;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   align-items: center;
@@ -43,16 +43,18 @@ body {
   display: none;
 }
 
-
-.img {
-  background: url(../img/mascan.png);
+main.img {
+  background: url(../img/pccom.png) no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: max-content;
 }
 
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(15, 1fr);
-  color: #4F4D55;
+  color: #4f4d55;
   background: #293039;
   grid-area: 1 / span 3;
   align-items: center;
@@ -63,16 +65,13 @@ section.title {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  color: #FFE5B4;
-  background: #000000;
+  color: #ffe5b4;
+  background-color: #ffe5b4;  
   grid-area: 1 / span 3;
   align-items: center;
   text-align: center;
 }
 
-section.title {
-  background-color: #FFE5B4;
-}
 
 section.title > h1 {
   color: #000000;
@@ -82,11 +81,17 @@ section.nosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(15, 1fr);
-  color: #000000; 
+  color: #000000;
   background: #ffffff;
   grid-area: 1 / span 3;
   align-items: center;
   text-align: center;
+}
+
+section.nosotros > hr {
+  width: 3em;
+  grid-column: 2;
+  margin: 0 auto;
 }
 
 section > h1 {
@@ -128,6 +133,14 @@ section > i {
   padding-top: 0.5em;
   margin: 0 auto;
 } */
+
+section > .content > i {
+  padding: 5px;
+}
+
+section > .content > i:hover {
+  cursor: pointer;
+}
 
 section.nosotros > img {
   grid-column: auto;
@@ -193,7 +206,8 @@ div.form > h2 {
   /* padding: 5%; */
 }
 
-input[type=text], input[type=submit] {
+input[type="text"],
+input[type="submit"] {
   display: block;
   text-align: left;
   color: rgb(245, 89, 115);
@@ -208,19 +222,19 @@ input[type=text], input[type=submit] {
   font-size: 1.25em;
 }
 
-::-moz-placeholder{
+::-moz-placeholder {
   font-size: 1.25em;
 }
 
-:-ms-input-placeholder{
+:-ms-input-placeholder {
   font-size: 1.25em;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
   font-size: 1.25em;
 }
 
-input[type=submit] {
+input[type="submit"] {
   text-align: center;
 }
 
@@ -231,42 +245,7 @@ input[type=submit] {
 
  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* No mirar, código basura <3 */
+/* No mirar, código basura <3 */
 
 /* grid-row: 3 / 3;
   grid-column: 2 / 2; */
