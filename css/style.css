@@ -53,7 +53,27 @@ main.img {
   height: 20rem;
   align-items: center;
   text-align: center;
-  color: #ffe5b4;
+  color:azure;
+}
+
+main.img > h1 {
+  font-size: 2em;
+}
+
+
+div.text {
+  width: 100%;
+}
+
+div.text > img {
+  float: left;
+  width: 200px;
+  height: 100%;
+  margin: 25px;
+}
+
+div.text > p {
+  float: left;
 }
 
 section {
