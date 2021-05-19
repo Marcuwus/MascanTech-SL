@@ -44,10 +44,16 @@ body {
 }
 
 main.img {
-  background: url(../img/pccom.png) no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  height: max-content;
+  display: grid;
+  /* background: rgb(255,255,255);
+  background: url(../img/pccom.png), radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%);  */
+  background: url(../img/pccom.png);
+  background-size: cover;
+  background-position:center;
+  height: 20rem;
+  align-items: center;
+  text-align: center;
+  color: #ffe5b4;
 }
 
 section {
@@ -55,7 +61,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(15, 1fr);
   color: #4f4d55;
-  background: #293039;
+  background: #ffe5b4;
   grid-area: 1 / span 3;
   align-items: center;
   text-align: center;
@@ -112,8 +118,8 @@ section > i {
   grid-column: auto;
   text-align: center;
   grid-row: 5 / span 3;
-  color: white;
-  background: #ffc0c0;
+  background: #fff8ea;
+  color: #b18c19;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -136,6 +142,7 @@ section > i {
 
 section > .content > i {
   padding: 5px;
+  border-radius: 50%;
 }
 
 section > .content > i:hover {
