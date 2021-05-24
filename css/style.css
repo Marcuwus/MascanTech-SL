@@ -67,12 +67,13 @@ div.text {
 
 div.text > img {
   float: left;
-  width: 200px;
+  width: 800px;
   height: 100%;
-  margin: 25px;
+  margin: 60px;
 }
 
 div.text > p {
+  margin-top: 4em;
   float: left;
 }
 
@@ -97,7 +98,6 @@ section.title {
   align-items: center;
   text-align: center;
 }
-
 
 section.title > h1 {
   color: #000000;
@@ -133,6 +133,7 @@ section.nosotros > h1 {
   text-align: center;
   font-size: 2.5rem;
 }
+
 
 section > i {
   grid-column: auto;
@@ -237,7 +238,7 @@ input[type="text"],
 input[type="submit"] {
   display: block;
   text-align: left;
-  color: rgb(245, 89, 115);
+  color: brown;
   gap: 50%;
   height: 50px;
   width: 500px;
